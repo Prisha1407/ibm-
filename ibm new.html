@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Website</title>
+    <link rel="stylesheet" href="ibm homepage sty.css">
+    <script defer src="ib homepage js.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://dynamic.design.com/preview/logodraft/243a7189-c52b-4105-b103-b0b75e9d7dff/image/large.png"alt="Healthcare Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#emergency">Emergency</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Patient Login</a>
+                        <div class="dropdown-content">
+                            <form id="patientLoginForm">
+                                <label for="patientUsername">Username:</label>
+                                <input type="text" id="patientUsername" name="username" required>
+                                <label for="patientPassword">Password:</label>
+                                <input type="password" id="patientPassword" name="password" required>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Department Login</a>
+                        <div class="dropdown-content">
+                            <form id="departmentLoginForm">
+                                <label for="departmentUsername">Username:</label>
+                                <input type="text" id="departmentUsername" name="username" required>
+                                <label for="departmentPassword">Password:</label>
+                                <input type="password" id="departmentPassword" name="password" required>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog & Podcast</a></li>
+                    <li><a href="#tracker">Health Tracker</a></li>
+                    <li><a href="#recipes">Health Recipes</a></li>
+                    <li><a href="#fitness">Fitness Tips</a></li>
+                    <li><a href="#fun">Fun Learning</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-card">
+        <img src="https://pikwizard.com/pw/medium/5690689df6a7e28a7d775ef0e4823d31.jpg">
+        <div class="banner-text">
+            <h1>Welcome to Our Healthcare Services</h1>
+            <p>Your health is our priority. Explore our services and resources.</p>
+        </div>
+    </div>
+    <section id="register" class="form-section">
+        <div class="container">
+            <h2>New Patient Registration</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="appointment" class="form-section">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="appointmentName">Full Name:</label>
+                    <input type="text" id="appointmentName" name="appointmentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Preferred Appointment Date:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDoctor">Preferred Doctor:</label>
+                    <select id="appointmentDoctor" name="appointmentDoctor" required>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Johnson">Dr. Johnson</option>
+                        <option value="Dr. Brown">Dr. Brown</option>
+                    </select>
+                </div>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="emergency" class="info-section">
+        <div class="container">
+            <h2>Emergency Contact</h2>
+            <p>If you are experiencing a medical emergency, please call 911 immediately. For non-life-threatening emergencies, you can reach our emergency department at (123) 456-7890.</p>
+        </div>
+    </section>
+
+    <section id="feedback" class="form-section">
+        <div class="container">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="feedbackName">Full Name:</label>
+                    <input type="text" id="feedbackName" name="feedbackName" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackEmail">Email:</label>
+                    <input type="email" id="feedbackEmail" name="feedbackEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackMessage">Message:</label>
+                    <textarea id="feedbackMessage" name="feedbackMessage" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="services" class="info-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of healthcare services, including primary care, specialty care, emergency services, and more. Our team of experienced professionals is here to provide you with the highest quality care.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please contact us at (123) 456-7890 or email us at info@healthcare.com. Our office is located at 123 Healthcare St, Health City, HC 12345.</p>
+        </div>
+    </section>
+
+    <section id="blog" class="info-section">
+        <div class="container">
+            <h2>Healthy Lifestyle Blog & Podcast</h2>
+            <p>Explore our blog and podcast for tips and information on maintaining a healthy lifestyle. From nutrition advice to fitness tips, we cover a wide range of topics to help you stay healthy and informed.</p>
+        </div>
+    </section>
+
+    <section id="tracker" class="info-section">
+        <div class="container">
+            <h2>Health Tracker</h2>
+            <p>Track your health with our online tools. Monitor your progress and stay on top of your health goals.</p>
+        </div>
+    </section>
+
+    <section id="recipes" class="info-section">
+        <div class="container">
+            <h2>Health Recipes</h2>
+            <p>Discover delicious and healthy recipes to support your well-being. Our recipes are designed to be nutritious and easy to prepare.</p>
+        </div>
+    </section>
+
+    <section id="fitness" class="info-section">
+        <div class="container">
+            <h2>Fitness Tips</h2>
+            <p>Get fitness tips and advice from our experts. Learn how to stay active and maintain a healthy lifestyle.</p>
+        </div>
+    </section>
+
+    <section id="fun" class="info-section">
+        <div class="container">
+            <h2>Fun Learning</h2>
+            <p>Engage in fun and educational activities to enhance your health knowledge. From interactive games to informative articles, we have something for everyone.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Healthcare Website. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="data:image/jpeg;base64,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" alt="Facebook">
